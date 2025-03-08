@@ -22,6 +22,9 @@ class Config(object):
     
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
+    # Assuming you need to load STRING_SESSION from an environment vari
+    STRING_SESSION = os.getenv("STRING_SESSION", None)  # or some default value
+    
 
 
 class Txt(object):
