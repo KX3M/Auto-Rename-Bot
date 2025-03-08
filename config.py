@@ -3,21 +3,21 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "29895250")
+    API_HASH  = os.environ.get("API_HASH", "29ca1e2311efdf950eea03a6ae2bc8ee")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8092013853:AAFMWjbX7QDnHY8Rm85TcBWAxAnzQ9SxHFA") 
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME","AshutoshGoswami24")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","PyBotz")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://sanji:sanji@sanjibots2689.xxgs2.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
+    START_PIC   = os.environ.get("START_PIC", "https://telegra.ph/file/a8e6aef1e2e383e68e122-3f263288e18b91f679.jpg")
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6076683960 6586630448').split()]
     # -- FORCE_SUB_CHANNELS = ["BotzPW","AshuSupport","AshutoshGoswami24"] -- # 
-    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'AshutoshGoswami24,BotzPW').split(',')
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'solo_leveling_tamil_arise').split(',')
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002283909105"))
     PORT = int(os.environ.get("PORT", ""))
     
     # wes response configuration     
@@ -27,19 +27,9 @@ class Config(object):
 class Txt(object):
     # part of text configuration
         
-    START_TXT = """Hello {} 
-    
-➻ This Is An Advanced And Yet Powerful Rename Bot.
-    
-➻ Using This Bot You Can Auto Rename Of Your Files.
-    
-➻ This Bot Also Supports Custom Thumbnail And Custom Caption.
-    
-➻ Use /tutorial Command To Know How To Use Me.
-
-<b>Bot Is Made By @AshutoshGoswami24</b>
-
-<b><a href='https://github.com/AshutoshGoswami24/Auto-Rename-Bot'>AshutoshGoswami24/Auto-Rename-Bot.git</a></b>
+    START_TXT = """<i>Hey!! {} You 
+ Yeah, you! This bot isn't just any rename bot—it's fast, powerful, and gets the job done! Rename files, change thumbnails, and even convert videos to files or vice versa. Oh, and did I mention custom thumbnails and captions? Yeah, it does that too! So, stop wasting time and start using it already!
+</i>
 """
     
     FILE_NAME_TXT = """<b><u>SETUP AUTO RENAME FORMAT</u></b>
@@ -49,7 +39,7 @@ Use These Keywords To Setup Custom File Name
 ✓ `[episode]` :- To Replace Episode Number
 ✓ `[quality]` :- To Replace Video Resolution
 
-<b>➻ Example :</b> <code> /autorename Naruto Shippuden S01[episode] [quality][Dual Audio] @AshutoshGoswami24</code>
+<b>➻ Example :</b> <code> /autorename Naruto Shippuden S01[episode] [quality][Dual Audio] @PythonBotz</code>
 
 <b>➻ Your Current Auto Rename Format :</b> <code>{format_template}</code> """
     
@@ -57,9 +47,9 @@ Use These Keywords To Setup Custom File Name
 <b>📝 Language :</b> <a href='https://python.org'>Python 3</a>
 <b>📚 Library :</b> <a href='https://pyrogram.org'>Pyrogram 2.0</a>
 <b>🚀 Server :</b> <a href='https://heroku.com'>Heroku</a>
-<b>🧑‍💻 Developer :</b> <a href='https://t.me/AshutoshGoswami24'>PandaWep</a>
+<b>🧑‍💻 Developer :</b> <a href='https://t.me/PythonBotz'>PythonBotz</a>
     
-<b>♻️ Bot Made By :</b> @AshutoshGoswami24"""
+<b>♻️ Bot Made By :</b> @PythonBotz"""
 
     
     THUMBNAIL_TXT = """<b><u>🖼️  HOW TO SET THUMBNAIL</u></b>
@@ -81,7 +71,7 @@ Use These Keywords To Setup Custom File Name
 ┣⪼ ⏳️ Dᴏɴᴇ : {0}%
 ┣⪼ 🚀 Sᴩᴇᴇᴅ: {3}/s
 ┣⪼ ⏰️ Eᴛᴀ: {4}
-┣⪼ 🥺 joine Plz: @AshutoshGoswami24
+┣⪼ 🥺 joine Plz: @PythonBotz
 ╰━━━━━━━━━━━━━━━➣ </b>"""
     
     
@@ -89,11 +79,11 @@ Use These Keywords To Setup Custom File Name
     
 If You Like My Bots & Projects, You Can 🎁 Donate Me Any Amount From 10 Rs Upto Your Choice.
     
-<b>My UPI - PandaWep@ybl</b> """
+<b>My UPI - <code>atif@superyes</code></b> """
     
     HELP_TXT = """<b>Hey</b> {}
     
-Joine @AshutoshGoswami24 To Help """
+Joine @PythonBotz To Help """
 
 
 
